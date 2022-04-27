@@ -1,0 +1,126 @@
+*{
+	font-family: 'Poppins', sans-serif;
+}
+.title{
+    text-align: center;
+	margin: 0 auto 80px;
+	position: relative;
+	line-height: 60px;
+	color: #555;
+   
+}
+.rating .fas {
+	color: #ff523b;
+}
+.nav-item .fas{
+	color: #0dafbb;
+}
+.fab.fa-facebook{
+	color:  #3b5998;
+}
+.fab.fa-twitter{
+	color: #1DA1F2;
+}
+.fab.fa-google{
+	color: 	#4285F4;
+}
+.fab.fa-instagram{
+	color:#3f729b;
+}
+.product-item-img:hover{
+    transform:translateY(-5px);
+}
+
+input.form-control {    
+    width: 300px;    
+}
+
+.jumbotron{
+	background-image: url('../img/banner-image-1920x500.jpg');
+	height: 200px;
+}
+.bg-color{
+	font-family:'Poppins',sans-serif ;
+    background: radial-gradient(#ffff);
+    font-family:'Poppins',sans-serif;
+}
+.pdp-mod-specification {
+    margin-top: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eff0f5;
+    font-size: 14px;
+}
+.large-number {
+    font-size: 95px;
+    vertical-align: top;
+    display: inline-block;
+    line-height: 100%;
+    font-family: "ProximaNova-Black";
+}
+.main-title {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 700;
+}
+.btn_explore {
+    background: #ee4d2d;
+    margin-top: 48px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: Open Sans;
+    text-transform: capitalize;
+	color: #fff;
+}
+.lzd-header .lzd-links-bar {
+    position: relative;
+    background: rgba(0,0,0,.03);
+    min-width: 1006px;
+    height: 25px;
+    text-align: right;
+    -webkit-transition: height .25s linear,zIndex 0s linear .25s;
+    transition: height .25s linear,zIndex 0s linear .25s;
+    z-index: 310;
+}
+.navbar__spacer {
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+.center, .v-center {
+    display: flex;
+    align-items: center;
+}
+.nav_wrapper_style{
+    color: #fff;
+    text-decoration: none;
+    font-size: .8125rem;
+    font-weight: 300;
+    padding: .25rem;
+    position: relative;
+    overflow: visible;
+    outline: 0;
+}
+.navbar-wrapper {
+    height: 2.125rem;
+    z-index: 400;
+    background: transparent;
+    position: relative;
+}
+#login img{
+    margin: 10px 0;
+  }
+  #login .center {
+    text-align: center;
+  }
+  
+  #login .login {
+    max-width: 300px;
+    margin: 35px auto;
+  }
+  
+  #login .login-form{
+    padding:0px 25px;
+  }
