@@ -64,21 +64,6 @@ body.fixed-nav {
 .z-1 {
   z-index: 1;
 }
-#drop-zone{
-  margin-top:20px;
-  height:200px;
-  background-color:white;
-  border:3px dashed grey;
-}
-.text{
-  margin-top:70px;
-  color:grey;
-  font-size:25px;
-  font-weight:bold;
-}
-#drop-zone img{
-  max-width:200px;
-}
 
 
 #mainNav .navbar-collapse {

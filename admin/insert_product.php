@@ -9,30 +9,29 @@ if(!isset($_SESSION['username'])){
 else {
     $product_title="";
 
-if (isset($_POST['save_products'])) {
-    $product_title = $_POST['product_title'];
-// File upload path
+if (isset($_POST['save_products']) && !empty($_FILES["image"]["name"])) {
+    $prod_title = $_POST['product_title'];
+    $prod_cat = $_POST['product_cat'];
+   $prod_price = $_POST['product_base_price'];
+   $prod_desc = $_POST['product_desc'];
+   $prod_varient=$_POST['product_variant'];
+
+   // File upload path
 $targetDir = "uploads/";
 $fileName = basename($_FILES["image"]["name"]);
 $targetFilePath = $targetDir . $fileName;
 $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
-
-if(!empty($_FILES["image"]["name"])){
     // Allow certain file formats
-    $allowTypes = array('jpg','png','jpeg','gif','pdf');
+    $allowTypes = array('jpg','png','jpeg','gif');
     if(in_array($fileType, $allowTypes)){
         move_uploaded_file($_FILES["image"]["tmp_name"], $targetFilePath);
             // Insert image file name into database
+            
             // $insert = $db->query("INSERT into images (file_name, uploaded_on) VALUES ('".$fileName."', NOW())");
-     } 
-    // $product_cat = $_POST['product_cat'];
-    // $sub_cat = $_POST['sub_cat'];
-    // $base_price = $_POST['product_base_price'];
-    // $product_desc = $_POST['product_desc'];
-    // $product_varient=$_POST['product_variant'];
-    // $price_change=$_POST['price_change'];
-    # code...
+     }
 }
+
+
     ?>
             <div class="panel panel-default"><!-- panel panel-default Starts -->
                 <div class="panel-heading"><!-- panel-heading Starts -->
@@ -41,7 +40,7 @@ if(!empty($_FILES["image"]["name"])){
                     </h3>
                 </div><!-- panel-heading Ends -->
                 <div class="panel-body"><!-- panel-body Starts -->
-                <form  method="post" >
+                <form  method="post" enctype="multipart/form-data">
                   <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
                  <div class="col-md-8 ">
                     <div class="card" style="width: 100%;">
@@ -59,9 +58,6 @@ if(!empty($_FILES["image"]["name"])){
                                 <hr style="border-top:1px dotted #ccc;"/>
                             <div id="col-md-12 well" class="text-center">
                             <input type="file" name="image">
-                            <div id="drop-zone">
-                            <img src="<?php echo $fileType;?>" alt="My image">
-                            </div>
                         </div>
                     </div>
                     </div>

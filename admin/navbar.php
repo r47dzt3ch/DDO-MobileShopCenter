@@ -1,13 +1,15 @@
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="/admin?dashboard">DDO-MobileShopCenter</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+      <a class="navbar-item text-center" href="index.html"><img src="../img/ddomsc_logo.png" alt="" width="100 px" height="100 px"></a>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+
           <a class="nav-link" href="/admin?dashboard">
+         
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Dashboard</span>
           </a>
@@ -60,13 +62,19 @@
                 </li>
             </ul>
             </li>list Ends -->
- 
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" href="admin/?customers">
+            <i class="fa fas fa-user"></i>
+            <span class="nav-link-text">Customers</span>
+          </a>
+        </li>
          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
           <a class="nav-link" href="register.php">
             <i class="fa fas fa-user"></i>
             <span class="nav-link-text">Users</span>
           </a>
         </li>
+
       </ul>
 
 
